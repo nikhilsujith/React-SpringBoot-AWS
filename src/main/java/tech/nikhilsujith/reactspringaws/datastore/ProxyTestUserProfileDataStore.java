@@ -15,9 +15,6 @@ public class ProxyTestUserProfileDataStore {
     static {
         USER_PROFILES.add(new UserProfile(UUID.randomUUID(), "JohnnyDoe", null));
         USER_PROFILES.add(new UserProfile(UUID.randomUUID(), "JanneDoe", null));
-        USER_PROFILES.add(new UserProfile(UUID.randomUUID(), "TimmyDoo", null));
-        USER_PROFILES.add(new UserProfile(UUID.randomUUID(), "Dofentsomething", null));
-        USER_PROFILES.add(new UserProfile(UUID.randomUUID(), "Yabadabadoo", null));
     }
 
     public List<UserProfile> getUserProfiles(){
