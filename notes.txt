@@ -1,0 +1,7 @@
+GIT NOT ADDED FRONTENT FOLDER
+
+mv client subfolder_tmp
+git submodule deinit frontend
+git rm --cached frontend
+mv subfolder_tmp frontend
+git add frontend
