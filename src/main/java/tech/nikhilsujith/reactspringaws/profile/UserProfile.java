@@ -7,8 +7,8 @@ import java.util.UUID;
 public class UserProfile {
 
 //    User will have unique profile ID, username, image line
-    private UUID userProfileID;
-    private String username;
+    private final UUID userProfileID;
+    private final String username;
     private String userProfileImageLink; // S3 link
 
 //    Creating a class constructor
@@ -25,17 +25,10 @@ public class UserProfile {
         return userProfileID;
     }
 
-    public void setUserProfileID(UUID userProfileID) {
-        this.userProfileID = userProfileID;
-    }
-
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
 //    Used Optional because a user profile image link could be null
     public Optional<String> getUserProfileImageLink() {

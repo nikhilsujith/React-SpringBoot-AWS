@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="503bd408-3464-46c9-836c-554f3c54c86e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/config/AmazonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/config/AmazonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/filestore/FileStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/filestore/FileStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileService.class" afterDir="false" />
     </list>
@@ -72,7 +73,7 @@
       <updated>1609967357293</updated>
       <workItem from="1609967360328" duration="6168000" />
       <workItem from="1609983445603" duration="875000" />
-      <workItem from="1610046356083" duration="3201000" />
+      <workItem from="1610046356083" duration="7762000" />
     </task>
     <servers />
   </component>
@@ -85,11 +86,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="com.amazonaws.services.s3.model.AmazonS3Exception" package="com.amazonaws.services.s3.model" />
           <option name="timeStamp" value="2" />

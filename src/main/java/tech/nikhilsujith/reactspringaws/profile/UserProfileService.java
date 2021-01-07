@@ -45,19 +45,29 @@ public class UserProfileService  {
 
 //        *   5. Store image in S3 and update database with S3 image and link
 
-//            Create folder for each user in S3
+                //Create folder for each user in S3
                 String path = String.format("%s/%s", BucketName.PROFILE_IMAGE.getBucketName(), user.getUserProfileID());
-
                 String filename = String.format("%s-%s", file.getOriginalFilename(), UUID.randomUUID());
-
                 try{
                     fileStore.save(path, filename, Optional.of(metadata), file.getInputStream());
+                    user.setUserProfileImageLink(filename);
                 }
                 catch (IOException e){
                     throw new IllegalStateException(e);
                 }
 
 
+    }
+
+    public byte[] downloadUserProfileImage(UUID userProfileId) {
+        UserProfile user = getUserProfileOrThrow(userProfileId);
+        String path = String.format("%s/%s",
+                BucketName.PROFILE_IMAGE.getBucketName(),
+                user.getUserProfileID());
+        //using streams
+        return user.getUserProfileImageLink()
+                .map(key -> fileStore.download(path,key))
+                .orElse(new byte[0]);
     }
 
     private Map<String, String> extractMetadata(MultipartFile file) {
@@ -87,4 +97,7 @@ public class UserProfileService  {
             throw new IllegalStateException("Cannot load empty file [ " + file.getSize() + "]" );
         }
     }
+
+
+
 }

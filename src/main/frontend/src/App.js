@@ -6,39 +6,43 @@ import {useDropzone} from 'react-dropzone'
 
 //User Profiles class
 const UserProfiles = () => {
-  /*
-  *the below line is used to set the state.
-  * The line is created after creating  "const data = response.data"
-  * */
-  const [userProfiles, setUserProfiles] = useState([]);
+    /*
+    *the below line is used to set the state.
+    * The line is created after creating  "const data = response.data"
+    * */
+    const [userProfiles, setUserProfiles] = useState([]);
 
-  const fetchUserProfiles = () => {
-    axios.get("http://localhost:8080/api/v1/user-profile").then(response => {
-      console.log(response);
-      //store data being sent from backed into data and set the state
-      setUserProfiles(response.data);
-    });
-  };
+    const fetchUserProfiles = () => {
+        axios.get("http://localhost:8080/api/v1/user-profile").then(response => {
+            console.log(response);
+            //store data being sent from backed into data and set the state
+            setUserProfiles(response.data);
+        });
+    };
 
-  useEffect( () => {
-    fetchUserProfiles();
-  }, []);
+    useEffect( () => {
+        fetchUserProfiles();
+    }, []);
 
-  return userProfiles.map((userProfile, index) => {
-    return (
-        <div key={index}>
-            {/*Profile Image*/}
-            <br />
-            <br />
-            <h1>{ userProfile.username }</h1>
-            <p>{ userProfile.userProfileID }</p>
-            <Dropzone userProfileID = {userProfile.userProfileID}/>
-            {/*the above line can be written as"
+    return userProfiles.map((userProfile, index) => {
+        return (
+            <div key={index}>
+                {userProfile.userProfileID ? (
+                    <img
+                        src = { `http://localhost:8080/api/v1/user-profile/${userProfile.userProfileID}/image/download` }
+                    />
+                ) : null}
+                <br />
+                <br />
+                <h1>{ userProfile.username }</h1>
+                <p>{ userProfile.userProfileID }</p>
+                <Dropzone userProfileID = {userProfile.userProfileID}/>
+                {/*the above line can be written as"
                 { ...userProfile }*/}
-            <br />
-        </div>
-      );
-  } );
+                <br />
+            </div>
+        );
+    } );
 };
 
 
@@ -87,11 +91,11 @@ function Dropzone({ userProfileID }) {
 
 
 function App() {
-  return (
-      <div className="App">
-        <UserProfiles />
-      </div>
-  )
+    return (
+        <div className="App">
+            <UserProfiles />
+        </div>
+    )
 }
 
 export default App;
