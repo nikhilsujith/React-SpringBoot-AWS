@@ -32,7 +32,9 @@ const UserProfiles = () => {
             <br />
             <h1>{ userProfile.username }</h1>
             <p>{ userProfile.userProfileID }</p>
-            <Dropzone />
+            <Dropzone userProfileID = {userProfile.userProfileID}/>
+            {/*the above line can be written as"
+                { ...userProfile }*/}
             <br />
         </div>
       );
@@ -41,11 +43,32 @@ const UserProfiles = () => {
 
 
 /*Using React Drop zone to drag and drop images*/
-function Dropzone() {
+function Dropzone({ userProfileID }) {
     const onDrop = useCallback(acceptedFiles => {
         // Do something with the files
         const file = acceptedFiles[0];
         console.log(file);
+
+        /* Sending image to API */
+
+        const formData = new FormData();
+        //the name "file" should be same as in UserProfileController.java
+        formData.append("file", file);
+
+        axios.post(
+            `http://localhost:8080/api/v1/user-profile/${userProfileID}/image/upload`,
+            formData,
+            {
+                headers: {
+                    "Content-Type": "multipart/form-data"
+                }
+            }
+        ).then ( () => {
+            console.log("File uploaded successfully");
+        } ).catch(err => {
+            console.log(err);
+        });
+
     }, [])
     const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 

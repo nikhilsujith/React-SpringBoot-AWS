@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503bd408-3464-46c9-836c-554f3c54c86e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sample-images/JanneDoe.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample-images/JohnnyDoe.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/datastore/ProxyTestUserProfileDataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/config/AmazonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/config/AmazonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tech/nikhilsujith/reactspringaws/profile/UserProfileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +33,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,20 +50,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="react-spring-aws" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="tech.nikhilsujith.reactspringaws.Main" />
@@ -73,7 +70,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609967357293</updated>
-      <workItem from="1609967360328" duration="4630000" />
+      <workItem from="1609967360328" duration="6168000" />
+      <workItem from="1609983445603" duration="875000" />
+      <workItem from="1610046356083" duration="3201000" />
     </task>
     <servers />
   </component>
@@ -82,5 +81,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tech/nikhilsujith/reactspringaws/profile/UserProfileController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.amazonaws.services.s3.model.AmazonS3Exception" package="com.amazonaws.services.s3.model" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

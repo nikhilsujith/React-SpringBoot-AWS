@@ -35,7 +35,7 @@ public class UserProfileController {
      *   2. @RequestParam: The actual image which the user intends to upload*/
     /*Image upload API*/
     @PostMapping(
-            path = "{userProfileId}/image/download",
+            path = "{userProfileId}/image/upload",
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
